@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.pixers.pics/pho_wat(s3:700/FO/49/60/13/63/700_FO49601363_8ec5377c4fadf3feaeb3687514f20a2b.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/vinilos-plumas-negro-y-viejo-pergamino.jpg.jpg');
+    background-size: 80%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:  #332402; 
+    flex-direction: column; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0; 
+    background: none; 
+    border: none; 
+    box-shadow: none; 
+    border-radius: 0; 
+}
+
+.todo-heading {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: #120f0f; 
+    margin-bottom: 1em;
+    margin-top: -10px; 
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    background: none; 
+}
+
+.todo__value {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 10px;
+    color: #0a0505; 
+}
+
+.todo__checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo:has(.todo__checkbox:checked) {
+    color: #190606;
+    text-decoration: line-through;
+    order: 1;
+}
